@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		505B738218CDD43300DD2D93 /* cCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 505B738118CDD43300DD2D93 /* cCell.m */; };
+		5063006F18CE221000E3C8EC /* indirizzi.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 5063006D18CE1BB200E3C8EC /* indirizzi.sqlite3 */; };
+		50AC85B518CCEC2E002861BF /* VwIndirizzo.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AC85B418CCEC2E002861BF /* VwIndirizzo.m */; };
 		50BB3C9C18CB5404005A172A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BB3C9B18CB5404005A172A /* Foundation.framework */; };
 		50BB3C9E18CB5404005A172A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BB3C9D18CB5404005A172A /* CoreGraphics.framework */; };
 		50BB3CA018CB5404005A172A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BB3C9F18CB5404005A172A /* UIKit.framework */; };
@@ -15,13 +18,16 @@
 		50BB3CAC18CB5404005A172A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BB3CAB18CB5404005A172A /* AppDelegate.m */; };
 		50BB3CAF18CB5404005A172A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BB3CAD18CB5404005A172A /* Main_iPhone.storyboard */; };
 		50BB3CB218CB5404005A172A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BB3CB018CB5404005A172A /* Main_iPad.storyboard */; };
-		50BB3CB518CB5404005A172A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BB3CB418CB5404005A172A /* ViewController.m */; };
 		50BB3CB718CB5404005A172A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50BB3CB618CB5404005A172A /* Images.xcassets */; };
 		50BB3CBE18CB5404005A172A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BB3CBD18CB5404005A172A /* XCTest.framework */; };
 		50BB3CBF18CB5404005A172A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BB3C9B18CB5404005A172A /* Foundation.framework */; };
 		50BB3CC018CB5404005A172A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BB3C9F18CB5404005A172A /* UIKit.framework */; };
 		50BB3CC818CB5404005A172A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50BB3CC618CB5404005A172A /* InfoPlist.strings */; };
 		50BB3CCA18CB5404005A172A /* IndirizziTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BB3CC918CB5404005A172A /* IndirizziTests.m */; };
+		50BB3CD618CB5762005A172A /* Indirizzi.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BB3CD518CB5762005A172A /* Indirizzi.m */; };
+		50BB3CD818CB5A9F005A172A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BB3CD718CB5A9F005A172A /* libsqlite3.dylib */; };
+		50BB3CDB18CB62E9005A172A /* Indirizzo.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BB3CDA18CB62E9005A172A /* Indirizzo.m */; };
+		50BB3CDE18CB64DE005A172A /* viewElencoIndirizziViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BB3CDD18CB64DE005A172A /* viewElencoIndirizziViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		505B738018CDD43300DD2D93 /* cCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cCell.h; sourceTree = "<group>"; };
+		505B738118CDD43300DD2D93 /* cCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cCell.m; sourceTree = "<group>"; };
+		5063006D18CE1BB200E3C8EC /* indirizzi.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = indirizzi.sqlite3; sourceTree = "<group>"; };
+		50AC85B318CCEC2E002861BF /* VwIndirizzo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VwIndirizzo.h; sourceTree = "<group>"; };
+		50AC85B418CCEC2E002861BF /* VwIndirizzo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VwIndirizzo.m; sourceTree = "<group>"; };
 		50BB3C9818CB5404005A172A /* Indirizzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Indirizzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BB3C9B18CB5404005A172A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		50BB3C9D18CB5404005A172A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,14 +58,19 @@
 		50BB3CAB18CB5404005A172A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		50BB3CAE18CB5404005A172A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		50BB3CB118CB5404005A172A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		50BB3CB318CB5404005A172A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		50BB3CB418CB5404005A172A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		50BB3CB618CB5404005A172A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50BB3CBC18CB5404005A172A /* IndirizziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndirizziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BB3CBD18CB5404005A172A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		50BB3CC518CB5404005A172A /* IndirizziTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IndirizziTests-Info.plist"; sourceTree = "<group>"; };
 		50BB3CC718CB5404005A172A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50BB3CC918CB5404005A172A /* IndirizziTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndirizziTests.m; sourceTree = "<group>"; };
+		50BB3CD418CB5762005A172A /* Indirizzi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Indirizzi.h; sourceTree = "<group>"; };
+		50BB3CD518CB5762005A172A /* Indirizzi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Indirizzi.m; sourceTree = "<group>"; };
+		50BB3CD718CB5A9F005A172A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		50BB3CD918CB62E9005A172A /* Indirizzo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Indirizzo.h; sourceTree = "<group>"; };
+		50BB3CDA18CB62E9005A172A /* Indirizzo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Indirizzo.m; sourceTree = "<group>"; };
+		50BB3CDC18CB64DE005A172A /* viewElencoIndirizziViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewElencoIndirizziViewController.h; sourceTree = "<group>"; };
+		50BB3CDD18CB64DE005A172A /* viewElencoIndirizziViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = viewElencoIndirizziViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BB3CD818CB5A9F005A172A /* libsqlite3.dylib in Frameworks */,
 				50BB3C9E18CB5404005A172A /* CoreGraphics.framework in Frameworks */,
 				50BB3CA018CB5404005A172A /* UIKit.framework in Frameworks */,
 				50BB3C9C18CB5404005A172A /* Foundation.framework in Frameworks */,
@@ -103,6 +120,7 @@
 		50BB3C9A18CB5404005A172A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50BB3CD718CB5A9F005A172A /* libsqlite3.dylib */,
 				50BB3C9B18CB5404005A172A /* Foundation.framework */,
 				50BB3C9D18CB5404005A172A /* CoreGraphics.framework */,
 				50BB3C9F18CB5404005A172A /* UIKit.framework */,
@@ -114,14 +132,23 @@
 		50BB3CA118CB5404005A172A /* Indirizzi */ = {
 			isa = PBXGroup;
 			children = (
+				5063006D18CE1BB200E3C8EC /* indirizzi.sqlite3 */,
 				50BB3CAA18CB5404005A172A /* AppDelegate.h */,
 				50BB3CAB18CB5404005A172A /* AppDelegate.m */,
 				50BB3CAD18CB5404005A172A /* Main_iPhone.storyboard */,
 				50BB3CB018CB5404005A172A /* Main_iPad.storyboard */,
-				50BB3CB318CB5404005A172A /* ViewController.h */,
-				50BB3CB418CB5404005A172A /* ViewController.m */,
+				50BB3CDC18CB64DE005A172A /* viewElencoIndirizziViewController.h */,
+				50BB3CDD18CB64DE005A172A /* viewElencoIndirizziViewController.m */,
 				50BB3CB618CB5404005A172A /* Images.xcassets */,
 				50BB3CA218CB5404005A172A /* Supporting Files */,
+				50BB3CD418CB5762005A172A /* Indirizzi.h */,
+				50BB3CD518CB5762005A172A /* Indirizzi.m */,
+				50BB3CD918CB62E9005A172A /* Indirizzo.h */,
+				50BB3CDA18CB62E9005A172A /* Indirizzo.m */,
+				50AC85B318CCEC2E002861BF /* VwIndirizzo.h */,
+				50AC85B418CCEC2E002861BF /* VwIndirizzo.m */,
+				505B738018CDD43300DD2D93 /* cCell.h */,
+				505B738118CDD43300DD2D93 /* cCell.m */,
 			);
 			path = Indirizzi;
 			sourceTree = "<group>";
@@ -231,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5063006F18CE221000E3C8EC /* indirizzi.sqlite3 in Resources */,
 				50BB3CB218CB5404005A172A /* Main_iPad.storyboard in Resources */,
 				50BB3CB718CB5404005A172A /* Images.xcassets in Resources */,
 				50BB3CAF18CB5404005A172A /* Main_iPhone.storyboard in Resources */,
@@ -253,9 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50BB3CB518CB5404005A172A /* ViewController.m in Sources */,
 				50BB3CAC18CB5404005A172A /* AppDelegate.m in Sources */,
+				50BB3CD618CB5762005A172A /* Indirizzi.m in Sources */,
+				505B738218CDD43300DD2D93 /* cCell.m in Sources */,
+				50BB3CDB18CB62E9005A172A /* Indirizzo.m in Sources */,
+				50BB3CDE18CB64DE005A172A /* viewElencoIndirizziViewController.m in Sources */,
 				50BB3CA818CB5404005A172A /* main.m in Sources */,
+				50AC85B518CCEC2E002861BF /* VwIndirizzo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +506,7 @@
 				50BB3CCF18CB5404005A172A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50BB3CD018CB5404005A172A /* Build configuration list for PBXNativeTarget "IndirizziTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +515,7 @@
 				50BB3CD218CB5404005A172A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
